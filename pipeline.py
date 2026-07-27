@@ -3,7 +3,11 @@ import config as cfg
 from jinja2 import Environment, FileSystemLoader
 import base64
 from pathlib import Path
+import subprocess
 
+subprocess.run(["git", "add", "."])
+subprocess.run(["git", "commit", "-m", "Actualizacion diaria"])
+subprocess.run(["git", "push", "origin", "main"])
 # =========================
 # 📂 OUTPUT
 # =========================
